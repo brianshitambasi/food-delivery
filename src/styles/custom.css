@@ -1,0 +1,96 @@
+:root {
+  --primary-blue: #1a73e8;
+  --primary-dark: #0d47a1;
+  --primary-light: #42a5f5;
+  --primary-gradient: linear-gradient(135deg, #1a73e8, #42a5f5);
+  --secondary-blue: #e8f0fe;
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+.blue-text {
+  color: var(--primary-blue);
+}
+
+.blue-bg {
+  background: var(--primary-gradient);
+  color: #fff;
+}
+
+.btn-blue {
+  background: var(--primary-gradient);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.btn-blue:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.btn-outline-blue {
+  background: transparent;
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.btn-outline-blue:hover {
+  background: var(--primary-gradient);
+  color: #fff;
+  border-color: var(--primary-blue);
+  transform: scale(1.05);
+}
+
+.card-blue {
+  border: 2px solid var(--primary-blue);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(26, 115, 232, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-blue:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(26, 115, 232, 0.25);
+}
+
+.navbar-blue {
+  background: var(--primary-gradient) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-blue .navbar-brand,
+.navbar-blue .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+.navbar-blue .nav-link:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 20px;
+  bottom: 20%;
+}
+.carousel-caption h3 {
+  color: var(--primary-light);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.badge-blue {
+  background: var(--primary-gradient);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
