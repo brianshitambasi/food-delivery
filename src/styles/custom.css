@@ -94,3 +94,20 @@ body {
   border-radius: 20px;
   font-weight: bold;
 }
+
+.btn-outline-blue {
+  background: transparent;
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-blue:hover {
+  background: var(--primary-gradient);
+  color: #fff;
+  border-color: var(--primary-blue);
+  transform: scale(1.05);
+}

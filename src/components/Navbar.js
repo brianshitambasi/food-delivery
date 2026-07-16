@@ -19,8 +19,8 @@ const AppNavbar = () => {
   return (
     <Navbar expand="lg" className="navbar-blue" sticky="top">
       <Container>
-        <Navbar.Brand as={Link} to="/">
-          FoodDelivery
+        <Navbar.Brand as={Link} to="/" style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>
+          Utamu
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
