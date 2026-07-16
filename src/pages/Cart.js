@@ -47,21 +47,21 @@ const Cart = () => {
 
   const getImageUrl = (foodName) => {
     const images = {
-      'pizza': 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=100&h=100&fit=crop',
-      'burger': 'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?w=100&h=100&fit=crop',
-      'salad': 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?w=100&h=100&fit=crop',
-      'pasta': 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=100&h=100&fit=crop',
-      'chicken': 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?w=100&h=100&fit=crop',
-      'rice': 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=100&h=100&fit=crop',
-      'fish': 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?w=100&h=100&fit=crop',
-      'bbq': 'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?w=100&h=100&fit=crop',
+      'pizza': 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=150&h=150&fit=crop',
+      'burger': 'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?w=150&h=150&fit=crop',
+      'salad': 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?w=150&h=150&fit=crop',
+      'pasta': 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=150&h=150&fit=crop',
+      'chicken': 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?w=150&h=150&fit=crop',
+      'rice': 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=150&h=150&fit=crop',
+      'fish': 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?w=150&h=150&fit=crop',
+      'bbq': 'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?w=150&h=150&fit=crop',
     };
 
     const name = foodName.toLowerCase();
     for (const [key, url] of Object.entries(images)) {
       if (name.includes(key)) return url;
     }
-    return 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=100&h=100&fit=crop';
+    return 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=150&h=150&fit=crop';
   };
 
   if (!cart || cart.items.length === 0) {
@@ -102,9 +102,9 @@ const Cart = () => {
                   src={getImageUrl(item.food.name)} 
                   alt={item.food.name}
                   rounded
-                  style={{ width: '60px', height: '60px', objectFit: 'cover' }}
+                  style={{ width: '70px', height: '70px', objectFit: 'cover' }}
                   onError={(e) => {
-                    e.target.src = 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=100&h=100&fit=crop';
+                    e.target.src = 'https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?w=150&h=150&fit=crop';
                   }}
                 />
               </Col>

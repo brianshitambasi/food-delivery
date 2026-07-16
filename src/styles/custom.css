@@ -111,3 +111,40 @@ body {
   border-color: var(--primary-blue);
   transform: scale(1.05);
 }
+
+/* Food Card Hover Effects */
+.hover-zoom {
+  transition: transform 0.5s ease;
+}
+
+.card-blue:hover .hover-zoom {
+  transform: scale(1.05);
+}
+
+.card-blue {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-blue:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(26, 115, 232, 0.25) !important;
+}
+
+/* Badge styles */
+.badge-warning {
+  background: #ffc107;
+  color: #333;
+}
+
+/* Cart button pulse animation */
+.btn-blue.adding {
+  animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
