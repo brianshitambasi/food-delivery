@@ -67,7 +67,7 @@ const Cart = () => {
   if (!cart || cart.items.length === 0) {
     return (
       <Container className="text-center my-5" style={{ minHeight: '60vh' }}>
-        <div style={{ fontSize: '4rem', marginBottom: '20px' }}>í»’</div>
+        <div style={{ fontSize: '4rem', marginBottom: '20px' }}>.</div>
         <h3 className="blue-text">Your Cart is Empty</h3>
         <p className="text-muted">Looks like you haven't added any items yet.</p>
         <Link to="/menu">

@@ -110,7 +110,7 @@ const Orders = () => {
 
       {orders.length === 0 ? (
         <div className="text-center my-5" style={{ padding: '60px 20px' }}>
-          <div style={{ fontSize: '4rem', marginBottom: '20px' }}>Ì≥ã</div>
+          <div style={{ fontSize: '4rem', marginBottom: '20px' }}></div>
           <h4 className="blue-text">No Orders Yet</h4>
           <p className="text-muted">You haven't placed any orders yet. Start exploring our menu!</p>
           <Link to="/menu">
@@ -212,7 +212,7 @@ const Orders = () => {
                       <Row>
                         <Col md={6}>
                           <p className="mb-0 small">
-                            <span className="text-muted">Ì≥ç Delivery:</span>
+                            <span className="text-muted">. Delivery:</span>
                             <span className="ms-2">{order.shippingAddress?.street}</span>
                           </p>
                           <p className="mb-0 small">
@@ -222,11 +222,11 @@ const Orders = () => {
                         </Col>
                         <Col md={6}>
                           <p className="mb-0 small">
-                            <span className="text-muted">Ì≥û Phone:</span>
+                            <span className="text-muted">. Phone:</span>
                             <span className="ms-2">{order.phone || 'N/A'}</span>
                           </p>
                           <p className="mb-0 small">
-                            <span className="text-muted">Ì≤≥ Payment:</span>
+                            <span className="text-muted">. Payment:</span>
                             <span className="ms-2">{order.paymentMethod?.toUpperCase() || 'N/A'}</span>
                           </p>
                         </Col>
